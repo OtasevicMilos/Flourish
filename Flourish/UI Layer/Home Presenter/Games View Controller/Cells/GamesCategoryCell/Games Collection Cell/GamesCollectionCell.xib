@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="gamesCollectionCell" id="gTV-IL-0wX" customClass="GamesCollectionCell" customModule="Flourish" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="166"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="166"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ob-J1-vDt">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="166"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="eoO-7b-vIv">
+                                <rect key="frame" x="12.5" y="0.0" width="75.5" height="75.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75.5" id="Lit-Cu-McO"/>
+                                    <constraint firstAttribute="height" constant="75.5" id="acW-JF-3BO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion Expert" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyV-Na-0Un">
+                                <rect key="frame" x="4" y="90" width="92.5" height="15"/>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="13"/>
+                                <color key="textColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.42745098039215684" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wvb-i1-ec8">
+                                <rect key="frame" x="16" y="120" width="68" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19,2k pts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LtZ-Tx-MJK">
+                                        <rect key="frame" x="6.5" y="2.5" width="55" height="15"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="LtZ-Tx-MJK" firstAttribute="centerX" secondItem="Wvb-i1-ec8" secondAttribute="centerX" id="5Q0-Qm-vP6"/>
+                                    <constraint firstAttribute="width" constant="68" id="dxA-Zc-TcP"/>
+                                    <constraint firstAttribute="height" constant="20" id="rS8-hL-z8z"/>
+                                    <constraint firstItem="LtZ-Tx-MJK" firstAttribute="centerY" secondItem="Wvb-i1-ec8" secondAttribute="centerY" id="wFo-4O-fYZ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eoO-7b-vIv" firstAttribute="top" secondItem="5ob-J1-vDt" secondAttribute="top" id="2Rm-U5-1jw"/>
+                            <constraint firstItem="Wvb-i1-ec8" firstAttribute="centerX" secondItem="5ob-J1-vDt" secondAttribute="centerX" id="46i-4m-Oje"/>
+                            <constraint firstItem="Wvb-i1-ec8" firstAttribute="top" secondItem="nyV-Na-0Un" secondAttribute="bottom" constant="15" id="4yy-2K-ECE"/>
+                            <constraint firstItem="eoO-7b-vIv" firstAttribute="centerX" secondItem="5ob-J1-vDt" secondAttribute="centerX" id="U99-rS-3qQ"/>
+                            <constraint firstItem="nyV-Na-0Un" firstAttribute="top" secondItem="eoO-7b-vIv" secondAttribute="bottom" constant="14.5" id="loV-aJ-OYN"/>
+                            <constraint firstItem="nyV-Na-0Un" firstAttribute="centerX" secondItem="5ob-J1-vDt" secondAttribute="centerX" id="sk1-oJ-yoo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="5ob-J1-vDt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BDt-hJ-IMG"/>
+                <constraint firstItem="5ob-J1-vDt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MsX-23-WIf"/>
+                <constraint firstAttribute="trailing" secondItem="5ob-J1-vDt" secondAttribute="trailing" id="smn-xK-GSN"/>
+                <constraint firstAttribute="bottom" secondItem="5ob-J1-vDt" secondAttribute="bottom" id="yhc-4C-P3p"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="100" height="183"/>
+            <point key="canvasLocation" x="115.94202898550725" y="172.76785714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="test" width="286" height="286"/>
+    </resources>
+</document>

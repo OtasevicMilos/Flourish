@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CheckInboxViewController" customModule="Flourish" customModuleProvider="target">
+            <connections>
+                <outlet property="okButton" destination="K8c-Sd-hDo" id="UYv-Tg-7pR"/>
+                <outlet property="view" destination="p0c-WP-1zB" id="ALN-tt-Rve"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="p0c-WP-1zB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8c-Sd-hDo">
+                    <rect key="frame" x="87" y="777" width="240" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="2Qw-Fs-cTf"/>
+                        <constraint firstAttribute="height" constant="65" id="Vyb-bc-yR1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="OK">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="okButtonPressed:" destination="-1" eventType="touchUpInside" id="GAZ-mr-4Sr"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSD-9x-ggn">
+                    <rect key="frame" x="95" y="207" width="224" height="224"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="224" id="uDz-QJ-IkY"/>
+                        <constraint firstAttribute="width" constant="224" id="wRZ-T9-KxJ"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="letter" translatesAutoresizingMaskIntoConstraints="NO" id="dDe-Yq-1yb">
+                    <rect key="frame" x="94.5" y="206.5" width="225" height="225"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="225" id="BAw-os-EDa"/>
+                        <constraint firstAttribute="width" constant="225" id="EOA-iW-rxb"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your request was sent successfully!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvH-3f-iNR">
+                    <rect key="frame" x="60" y="491" width="294" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your request was sent successfully!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7l-60-N0G">
+                    <rect key="frame" x="26" y="532" width="362" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="8Ss-ro-9wP" firstAttribute="bottom" secondItem="K8c-Sd-hDo" secondAttribute="bottom" constant="20" id="7hK-pQ-B0c"/>
+                <constraint firstItem="dvH-3f-iNR" firstAttribute="top" secondItem="xSD-9x-ggn" secondAttribute="bottom" constant="60" id="CKe-ks-nCB"/>
+                <constraint firstAttribute="trailing" secondItem="c7l-60-N0G" secondAttribute="trailing" constant="26" id="EJE-0J-XnY"/>
+                <constraint firstItem="xSD-9x-ggn" firstAttribute="centerX" secondItem="p0c-WP-1zB" secondAttribute="centerX" id="JOq-te-i0p"/>
+                <constraint firstItem="dvH-3f-iNR" firstAttribute="centerX" secondItem="p0c-WP-1zB" secondAttribute="centerX" id="ShF-wc-JOm"/>
+                <constraint firstItem="c7l-60-N0G" firstAttribute="leading" secondItem="p0c-WP-1zB" secondAttribute="leading" constant="26" id="Uz2-oA-snh"/>
+                <constraint firstItem="xSD-9x-ggn" firstAttribute="top" secondItem="8Ss-ro-9wP" secondAttribute="top" constant="163" id="Wm6-qA-hZy"/>
+                <constraint firstItem="dDe-Yq-1yb" firstAttribute="centerX" secondItem="xSD-9x-ggn" secondAttribute="centerX" id="cib-tD-XZy"/>
+                <constraint firstItem="dDe-Yq-1yb" firstAttribute="centerY" secondItem="xSD-9x-ggn" secondAttribute="centerY" id="iID-5b-Bwa"/>
+                <constraint firstItem="c7l-60-N0G" firstAttribute="centerX" secondItem="p0c-WP-1zB" secondAttribute="centerX" id="qYN-2f-i0I"/>
+                <constraint firstItem="c7l-60-N0G" firstAttribute="top" secondItem="dvH-3f-iNR" secondAttribute="bottom" constant="20" id="ubT-Ki-a8d"/>
+                <constraint firstItem="K8c-Sd-hDo" firstAttribute="centerX" secondItem="p0c-WP-1zB" secondAttribute="centerX" id="wkw-Yi-OWs"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="8Ss-ro-9wP"/>
+            <point key="canvasLocation" x="139" y="92"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="letter" width="225" height="225"/>
+    </resources>
+</document>
