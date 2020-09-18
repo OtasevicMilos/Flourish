@@ -109,7 +109,7 @@ extension AppCoordinator: CheckInboxViewControllerDelegate{
 //MARK: ConfirmViewControllerDelegate
 extension AppCoordinator: ConfirmViewControllerDelegate{
     func finish() {
-        self.userSingIn()
+        self.showLoginVC()
     }
 }
 
@@ -131,7 +131,8 @@ extension AppCoordinator: PresenterViewControllerDelegare{
     
     func showGamesVC() {
         if gamesVC == nil{
-            self.gamesVC = GamesViewController()
+            self.gamesVC = GamesViewController(dataSource: GamesVCDataSource())
+            self.gamesVC?.feedback = self.presenterVC
         }
         self.presenterVC?.present(gamesVC)
     }

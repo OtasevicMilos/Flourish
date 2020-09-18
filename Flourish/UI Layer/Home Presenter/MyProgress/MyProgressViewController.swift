@@ -32,6 +32,8 @@ class MyProgressViewController: UIViewController {
     private func tableView(){
         self.dataSource.fetchData()
         self.table.dataSource = self.dataSource
+        self.table.register(UINib(nibName: "SpaceTableViewCell", bundle: nil), forCellReuseIdentifier: self.dataSource.spaceCellID)
+
         self.table.register(UINib(nibName: "TopProgressTableViewCell", bundle: nil), forCellReuseIdentifier: self.dataSource.topCellID)
         self.table.register(UINib(nibName: "GameCardTableViewCell", bundle: nil), forCellReuseIdentifier: self.dataSource.gameCardID)
         self.table.delegate = self

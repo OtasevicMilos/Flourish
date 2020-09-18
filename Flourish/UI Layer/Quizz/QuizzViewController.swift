@@ -169,7 +169,6 @@ class QuizzViewController: UIViewController {
         path.addArc(withCenter: CGPoint(x: 40, y: 147), radius: 31, startAngle: 0, endAngle: 2*CGFloat.pi, clockwise: true)
         
         path.addArc(withCenter: CGPoint(x: 89, y: 58), radius: 32, startAngle: 0, endAngle: 2*CGFloat.pi, clockwise: true)
-        //  path.move(to: CGPoint(x: 0.0, y: 0.0))
         path.close()
         path.addArc(withCenter: CGPoint(x: 174, y: 40), radius: 32, startAngle: 0, endAngle: 2*CGFloat.pi, clockwise: true)
         path.addArc(withCenter: CGPoint(x: 265, y: 58), radius: 32, startAngle: 0, endAngle: 2*CGFloat.pi, clockwise: true)

@@ -21,10 +21,8 @@ class VerificationVCDataSource{
         self.userID = userID
     }
     
-    func verifyMail(code: String){
-        self.dependencies.verificationUseCase.verifyMail(code: code, id: userID) { [weak self] response  in
-            return
-        }
+    func verifyMail(code: String, completion: @escaping (Response<String>) -> ()){
+        self.dependencies.verificationUseCase.verifyMail(code: code, id: userID, completion: completion)
     }
     
     func resetCode(){

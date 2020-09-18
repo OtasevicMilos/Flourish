@@ -22,6 +22,10 @@ class MyProgressVCDataSource: NSObject{
     let dependecies: MyProgressVCDataSourceDependencies
     var feedback: MyProgressVCDataSourceFeedback?
     var score: Score?
+    let images = [UIImage(named: "testProfileImage1"), UIImage(named: "GameCardTest"), UIImage(named: "testProfileImage2")]
+    let topCellID = "topProgressTableViewCell"
+    let gameCardID = "gameCardTableViewCell"
+    let spaceCellID = "spaceTableViewCell"
     init(dependecies: MyProgressVCDataSourceDependencies){
         self.dependecies = dependecies
     }
@@ -38,15 +42,13 @@ class MyProgressVCDataSource: NSObject{
         }
     }
     
-    let images = [UIImage(named: "testProfileImage1"), UIImage(named: "GameCardTest"), UIImage(named: "testProfileImage2")]
-    let topCellID = "topProgressTableViewCell"
-    let gameCardID = "gameCardTableViewCell"
+    
 }//class
 
 //MARK: UITableViewDataSource
 extension MyProgressVCDataSource: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (score?.games.count ?? 0) + 1
+        return (score?.games.count ?? 0) + 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -78,6 +80,11 @@ extension MyProgressVCDataSource: UITableViewDataSource{
             }
             topCell.setAttributesView(socialAwareness: socialAwareness , selfAwareness: selfAwareness, selfMangement: selfMangement, relationshipManagment: relationshipManagment)
             return topCell
+        }else if indexPath.row == ((score?.games.count ?? 0) + 1){
+            let cell = tableView.dequeueReusableCell(withIdentifier: self.spaceCellID, for: indexPath)
+            guard let spaceCell = cell as? SpaceTableViewCell else {return cell}
+            spaceCell.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
+            return spaceCell
         }
         let cell = tableView.dequeueReusableCell(withIdentifier: self.gameCardID, for: indexPath)
         guard  let gameCardCell = cell as? GameCardTableViewCell else {

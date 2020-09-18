@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0770432D25147F9100E038FE /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0770432C25147F9100E038FE /* UILabel.swift */; };
+		0770432F2514B53900E038FE /* GamesVCDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0770432E2514B53900E038FE /* GamesVCDataSource.swift */; };
+		077043322514CEDB00E038FE /* SpaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077043302514CEDB00E038FE /* SpaceTableViewCell.swift */; };
+		077043332514CEDB00E038FE /* SpaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 077043312514CEDB00E038FE /* SpaceTableViewCell.xib */; };
 		1D0AE0E0250A4FF800D54A3E /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0AE0DF250A4FF800D54A3E /* ApiRequest.swift */; };
 		1D0AE0E3250A505200D54A3E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0AE0E2250A505200D54A3E /* Endpoint.swift */; };
 		1D0AE0E6250A513400D54A3E /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0AE0E4250A513300D54A3E /* WebService.swift */; };
@@ -169,6 +172,9 @@
 
 /* Begin PBXFileReference section */
 		0770432C25147F9100E038FE /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		0770432E2514B53900E038FE /* GamesVCDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesVCDataSource.swift; sourceTree = "<group>"; };
+		077043302514CEDB00E038FE /* SpaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceTableViewCell.swift; sourceTree = "<group>"; };
+		077043312514CEDB00E038FE /* SpaceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpaceTableViewCell.xib; sourceTree = "<group>"; };
 		1D0AE0DF250A4FF800D54A3E /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		1D0AE0E2250A505200D54A3E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		1D0AE0E4250A513300D54A3E /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
@@ -841,6 +847,7 @@
 				1DF5B56F2508FCAA006D3064 /* Cells */,
 				1DF5B57D2508FCAA006D3064 /* GamesViewController.swift */,
 				1DF5B57E2508FCAA006D3064 /* GamesViewController.xib */,
+				0770432E2514B53900E038FE /* GamesVCDataSource.swift */,
 			);
 			path = "Games View Controller";
 			sourceTree = "<group>";
@@ -957,6 +964,8 @@
 				1DF5B5D4250A1F78006D3064 /* TopProgressTableViewCell.xib */,
 				1DF5B5DA250A22DB006D3064 /* GameCardTableViewCell.swift */,
 				1DF5B5DB250A22DB006D3064 /* GameCardTableViewCell.xib */,
+				077043302514CEDB00E038FE /* SpaceTableViewCell.swift */,
+				077043312514CEDB00E038FE /* SpaceTableViewCell.xib */,
 			);
 			path = MyProgressCells;
 			sourceTree = "<group>";
@@ -1056,6 +1065,7 @@
 				1D623AC62507AE8100E6187E /* Ubuntu-BoldItalic.ttf in Resources */,
 				1D623AC52507AE8100E6187E /* Ubuntu-MediumItalic.ttf in Resources */,
 				1D90C5DE2508A828004817ED /* CreateAccountViewController.xib in Resources */,
+				077043332514CEDB00E038FE /* SpaceTableViewCell.xib in Resources */,
 				1DA9ACAD2513B2D1004226A7 /* DatePickerView.xib in Resources */,
 				1D623ABC2507A93500E6187E /* HopView.xib in Resources */,
 				1D90C5CF2507C5A6004817ED /* ForgotPasswordViewController.xib in Resources */,
@@ -1182,6 +1192,7 @@
 				1D881FD0250B97320073485B /* VerificationProvider.swift in Sources */,
 				1D4B1BEC251245E600EFB4BE /* QuizzUseCase.swift in Sources */,
 				1D90C5DA2507C8C1004817ED /* ConfirmViewController.swift in Sources */,
+				0770432F2514B53900E038FE /* GamesVCDataSource.swift in Sources */,
 				1DF5B5DC250A22DB006D3064 /* GameCardTableViewCell.swift in Sources */,
 				1D58CA4F25120CCA004F67F0 /* DialogueMasterResultUseCase.swift in Sources */,
 				1D0AE10A250A710E00D54A3E /* Stirng.swift in Sources */,
@@ -1234,6 +1245,7 @@
 				1D881FC4250B8F690073485B /* CustomResponse.swift in Sources */,
 				1D0AE108250A5D5100D54A3E /* Dictionary.swift in Sources */,
 				1D58CA4B25120AB3004F67F0 /* DialogueMaestroCongratulationVCDataSource.swift in Sources */,
+				077043322514CEDB00E038FE /* SpaceTableViewCell.swift in Sources */,
 				1D58CA352510ED67004F67F0 /* DialogueMaestroSuccessViewController.swift in Sources */,
 				1D623A9B2507A7A500E6187E /* AppDelegate.swift in Sources */,
 				1D0AE0E7250A513400D54A3E /* NetworkSession.swift in Sources */,
@@ -1385,6 +1397,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Flourish/Flourish.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = H8V65WQSV5;
 				INFOPLIST_FILE = Flourish/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
@@ -1392,7 +1405,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.amlitudo.FlourishApp;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amlitudo.Flourish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1406,6 +1420,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Flourish/Flourish.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = H8V65WQSV5;
 				INFOPLIST_FILE = Flourish/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
@@ -1413,7 +1428,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.amlitudo.FlourishApp;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amlitudo.Flourish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

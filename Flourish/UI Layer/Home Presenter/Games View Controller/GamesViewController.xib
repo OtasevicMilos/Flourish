@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GamesViewController" customModule="Flourish" customModuleProvider="target">
             <connections>
+                <outlet property="beckButtonView" destination="PJX-tA-MTe" id="xIw-LU-X2q"/>
+                <outlet property="beckButtonViewLeftConstraint" destination="qvK-ju-781" id="ipj-sB-3Pl"/>
                 <outlet property="mainBackgroundView" destination="HnH-3F-5gX" id="QDK-20-Tl4"/>
                 <outlet property="mainTableView" destination="Oia-cQ-bOl" id="yp9-dc-aaU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -33,20 +35,64 @@
                         <outlet property="delegate" destination="-1" id="6JB-YN-El9"/>
                     </connections>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PJX-tA-MTe">
+                    <rect key="frame" x="-200" y="-50" width="200" height="200"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wb" translatesAutoresizingMaskIntoConstraints="NO" id="oLB-ND-4HU">
+                            <rect key="frame" x="105" y="138" width="4" height="10"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="4" id="Eyr-Ha-fRg"/>
+                                <constraint firstAttribute="height" constant="10" id="hJS-bq-wQK"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rubik" translatesAutoresizingMaskIntoConstraints="NO" id="ljG-mW-ap6">
+                            <rect key="frame" x="126" y="126" width="34" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="6X6-9N-FWg"/>
+                                <constraint firstAttribute="width" constant="34" id="qdj-Q8-A95"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ljG-mW-ap6" secondAttribute="bottom" constant="40" id="1ev-C1-O4d"/>
+                        <constraint firstItem="oLB-ND-4HU" firstAttribute="centerY" secondItem="ljG-mW-ap6" secondAttribute="centerY" id="Hcq-Na-VHv"/>
+                        <constraint firstAttribute="trailing" secondItem="ljG-mW-ap6" secondAttribute="trailing" constant="40" id="JPy-w4-qtp"/>
+                        <constraint firstItem="ljG-mW-ap6" firstAttribute="leading" secondItem="oLB-ND-4HU" secondAttribute="trailing" constant="17" id="Qmg-29-nyt"/>
+                        <constraint firstAttribute="width" constant="200" id="fa6-wG-ZE8"/>
+                        <constraint firstAttribute="height" constant="200" id="z26-tQ-IH8"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RjD-Dd-UsG">
+                    <rect key="frame" x="-200" y="-50" width="200" height="200"/>
+                    <connections>
+                        <action selector="beckButtonPressed:" destination="-1" eventType="touchUpInside" id="pOD-qL-Thm"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HnH-3F-5gX" secondAttribute="bottom" id="0Op-Jx-tso"/>
                 <constraint firstItem="Oia-cQ-bOl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="2hd-Ig-bTe"/>
                 <constraint firstItem="Oia-cQ-bOl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3ZB-7h-zym"/>
+                <constraint firstItem="HnH-3F-5gX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Jsw-7h-YaK"/>
+                <constraint firstItem="PJX-tA-MTe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-50" id="PiS-bg-gWh"/>
+                <constraint firstItem="RjD-Dd-UsG" firstAttribute="width" secondItem="PJX-tA-MTe" secondAttribute="width" id="TGc-oy-Iay"/>
+                <constraint firstItem="RjD-Dd-UsG" firstAttribute="centerY" secondItem="PJX-tA-MTe" secondAttribute="centerY" id="YPm-NV-SAr"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HnH-3F-5gX" secondAttribute="trailing" id="YQg-lq-mQr"/>
+                <constraint firstItem="RjD-Dd-UsG" firstAttribute="centerX" secondItem="PJX-tA-MTe" secondAttribute="centerX" id="dpG-CN-ea1"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Oia-cQ-bOl" secondAttribute="trailing" id="eRM-IG-1Ic"/>
-                <constraint firstItem="HnH-3F-5gX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="iR7-4y-tmC"/>
                 <constraint firstItem="HnH-3F-5gX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="luf-EW-k5i"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Oia-cQ-bOl" secondAttribute="bottom" id="ohO-H3-D1k"/>
+                <constraint firstItem="RjD-Dd-UsG" firstAttribute="height" secondItem="PJX-tA-MTe" secondAttribute="height" id="own-om-6TA"/>
+                <constraint firstItem="PJX-tA-MTe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-200" id="qvK-ju-781"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="139" y="129"/>
+            <point key="canvasLocation" x="137.68115942028987" y="128.80434782608697"/>
         </view>
     </objects>
+    <resources>
+        <image name="rubik" width="31.333333969116211" height="34.333332061767578"/>
+        <image name="wb" width="6" height="13"/>
+    </resources>
 </document>

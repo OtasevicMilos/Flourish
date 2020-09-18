@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -17,9 +17,13 @@
             <connections>
                 <outlet property="containerView" destination="jQC-Jf-jme" id="oon-nu-PvA"/>
                 <outlet property="customTabBar" destination="zMs-5Z-pWe" id="R1A-1J-HYq"/>
-                <outlet property="gameButtonView" destination="CVG-vL-cLg" id="dli-Mi-qxW"/>
+                <outlet property="gameButtonBackgroundView" destination="2xV-DQ-LO6" id="auy-l2-3rK"/>
+                <outlet property="gameButtonView" destination="CVG-vL-cLg" id="wDm-Pc-fey"/>
+                <outlet property="myProgressBottomConstaint" destination="991-y4-2uu" id="cJH-Yf-U1j"/>
                 <outlet property="myProgressInticatorView" destination="qDd-JM-59Z" id="5LF-Rb-Vhs"/>
                 <outlet property="myProgressLabel" destination="xKB-cG-UPY" id="3iM-st-Dxm"/>
+                <outlet property="myprogressBottomConstaint" destination="O33-TB-F10" id="ss8-tX-FvT"/>
+                <outlet property="preferencesBottomConstaint" destination="vvc-Tx-fK8" id="KSf-JJ-Xd1"/>
                 <outlet property="preferencesIndicatorView" destination="bvv-Go-7kr" id="k3Y-L3-DPu"/>
                 <outlet property="preferencesLable" destination="6b1-Bt-Z4f" id="eMN-p8-9Up"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

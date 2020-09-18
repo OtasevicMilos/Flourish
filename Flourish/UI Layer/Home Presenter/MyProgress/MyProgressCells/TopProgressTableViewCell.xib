@@ -98,7 +98,7 @@ training for today!</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are ranked better than 67% of users" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dR-rm-TZu">
-                                                        <rect key="frame" x="90" y="63.5" width="346" height="12.5"/>
+                                                        <rect key="frame" x="0.0" y="63.5" width="526" height="12.5"/>
                                                         <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="11"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -130,6 +130,7 @@ training for today!</string>
                                                     <constraint firstItem="mDX-jc-TSj" firstAttribute="leading" secondItem="5Oh-Nt-Q0o" secondAttribute="leading" constant="19" id="9rp-Mn-eoE"/>
                                                     <constraint firstItem="63E-Pq-QZw" firstAttribute="centerY" secondItem="Qyr-ae-A71" secondAttribute="centerY" id="GH6-ZY-uxz"/>
                                                     <constraint firstItem="63E-Pq-QZw" firstAttribute="leading" secondItem="Qyr-ae-A71" secondAttribute="trailing" constant="5" id="I5W-zN-MXO"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7dR-rm-TZu" secondAttribute="trailing" id="KKv-37-SMR"/>
                                                     <constraint firstItem="4eJ-JP-Bvq" firstAttribute="leading" secondItem="mDX-jc-TSj" secondAttribute="trailing" constant="40" id="KRB-XS-rxM"/>
                                                     <constraint firstItem="6CP-by-SlK" firstAttribute="leading" secondItem="QOd-MM-zwq" secondAttribute="trailing" constant="5" id="MNQ-lq-dvz"/>
                                                     <constraint firstItem="Qyr-ae-A71" firstAttribute="centerX" secondItem="R2b-BW-eh9" secondAttribute="centerX" constant="-11" id="NL1-E8-Les"/>
@@ -137,9 +138,8 @@ training for today!</string>
                                                     <constraint firstItem="R2b-BW-eh9" firstAttribute="centerY" secondItem="4eJ-JP-Bvq" secondAttribute="centerY" id="Ytg-dU-C7r"/>
                                                     <constraint firstItem="QOd-MM-zwq" firstAttribute="leading" secondItem="mDX-jc-TSj" secondAttribute="trailing" constant="30" id="eyE-Lt-Wsa"/>
                                                     <constraint firstAttribute="height" constant="76" id="mIe-cl-XQL"/>
-                                                    <constraint firstItem="7dR-rm-TZu" firstAttribute="leading" secondItem="5Oh-Nt-Q0o" secondAttribute="leading" constant="90" id="mS8-mk-dDQ"/>
-                                                    <constraint firstAttribute="trailing" secondItem="7dR-rm-TZu" secondAttribute="trailing" constant="90" id="sLy-2D-JVi"/>
                                                     <constraint firstAttribute="bottom" secondItem="7dR-rm-TZu" secondAttribute="bottom" id="tF2-aI-fjP"/>
+                                                    <constraint firstItem="7dR-rm-TZu" firstAttribute="leading" secondItem="5Oh-Nt-Q0o" secondAttribute="leading" id="tJe-5c-xKq"/>
                                                     <constraint firstItem="R2b-BW-eh9" firstAttribute="leading" secondItem="4eJ-JP-Bvq" secondAttribute="trailing" constant="100" id="yBD-yY-yXN"/>
                                                     <constraint firstItem="Qyr-ae-A71" firstAttribute="centerY" secondItem="QOd-MM-zwq" secondAttribute="centerY" id="z29-1x-WhI"/>
                                                 </constraints>

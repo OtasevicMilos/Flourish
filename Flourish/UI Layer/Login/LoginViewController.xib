@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -132,8 +132,8 @@
                         <constraint firstAttribute="height" constant="2" id="GK1-u2-4Kf"/>
                     </constraints>
                 </view>
-                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GpW-WI-0JF">
-                    <rect key="frame" x="95.5" y="829" width="223.5" height="30"/>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="GpW-WI-0JF">
+                    <rect key="frame" x="97.5" y="829" width="219.5" height="30"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not registerd yet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cO1-lw-gOL">
                             <rect key="frame" x="0.0" y="0.0" width="104" height="30"/>
@@ -142,7 +142,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIW-rt-wha">
-                            <rect key="frame" x="112" y="0.0" width="111.5" height="30"/>
+                            <rect key="frame" x="108" y="0.0" width="111.5" height="30"/>
                             <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="13"/>
                             <color key="textColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <nil key="highlightedColor"/>

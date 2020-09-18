@@ -10,6 +10,7 @@ import UIKit
 
 class DialogueMaestroFailViewController: UIViewController {
     let answer: Answer
+    var feedback: DialogueMaestroAnswerFeedback?
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var nextQuestionButton: UIView!
     @IBOutlet weak var youtAnswerLabel: UILabel!
@@ -36,6 +37,7 @@ class DialogueMaestroFailViewController: UIViewController {
         self.desctiptionLabel.text = answer.answerDescription.translations[0].translationDescription
     }
     @IBAction func nextQuestionButtonPressed(_ sender: Any) {
+        self.feedback?.startTimer()
         self.dismiss(animated: true, completion: nil)
     }
     

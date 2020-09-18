@@ -59,7 +59,7 @@
                     <rect key="frame" x="26" y="532" width="362" height="47"/>
                     <string key="text">A verification code has been sent to your email address
 to activate the account. In case the email does not 
-reach youwithin 5 min, check the SPAM folder.</string>
+reach you within 5 min, check the SPAM folder.</string>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>

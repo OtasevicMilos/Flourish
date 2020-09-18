@@ -10,6 +10,7 @@ import UIKit
 
 class DialogueMaestroSuccessViewController: UIViewController {
     let answer: Answer
+    var feedback: DialogueMaestroAnswerFeedback?
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var nextQuestionButton: UIView!
     @IBOutlet weak var yourAnswerLabel: UILabel!
@@ -35,6 +36,7 @@ class DialogueMaestroSuccessViewController: UIViewController {
         self.descriptionLabel.text = answer.answerDescription.translations[0].translationDescription
     }
     @IBAction func nextQuestionButtonPressed(_ sender: Any) {
+        self.feedback?.startTimer()
         self.dismiss(animated: true, completion: nil)
     }
 }//class

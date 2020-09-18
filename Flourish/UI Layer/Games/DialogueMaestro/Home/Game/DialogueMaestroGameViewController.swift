@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol DialogueMaestroAnswerFeedback{
+    func startTimer()
+}
+
 protocol DialogueMaestroGameViewControllerDelegate{
     func gameOver()
     func gameFinish(points: [Int])
@@ -20,6 +24,7 @@ class DialogueMaestroGameViewController: UIViewController {
     var level = 0
     var lifes = 3
     var time = 60
+    var timerActive = true
     @IBOutlet weak var levelView: UIView!
     @IBOutlet weak var levelLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
@@ -35,9 +40,7 @@ class DialogueMaestroGameViewController: UIViewController {
         self.questions = questions
         super.init(nibName: nil, bundle: nil)
     }
-    
     required init?(coder: NSCoder) {  fatalError("init")}
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,9 +76,10 @@ class DialogueMaestroGameViewController: UIViewController {
     }
     
     @objc func startCount(){
+        if !timerActive {return}
         self.time -= 1
-        
         self.timeLabel.text = "\(time)s "
+        if self.time == 0{ self.timeEnd()}
     }
     
     private func timeEnd(){
@@ -99,7 +103,9 @@ class DialogueMaestroGameViewController: UIViewController {
         self.level += 1
         self.time = 60
         if answer.isCorrect == 1{
-            self.present(DialogueMaestroSuccessViewController(answer: answer), animated: true, completion: nil)
+            let dialogueMaestroSuccessVC = DialogueMaestroSuccessViewController(answer: answer)
+            dialogueMaestroSuccessVC.feedback = self
+            self.present(dialogueMaestroSuccessVC, animated: true, completion: nil)
             let reuslt = 500/(61 - self.time)
             self.points.append(reuslt)
             self.setlevel()
@@ -117,20 +123,32 @@ class DialogueMaestroGameViewController: UIViewController {
         default:
             self.delegate?.gameOver()
         }
-        self.present(DialogueMaestroFailViewController(answer: answer), animated: true, completion: nil)
-        
+        let dialogueMaestroFailVC = DialogueMaestroFailViewController(answer: answer)
+        dialogueMaestroFailVC.feedback = self
+        self.present(dialogueMaestroFailVC, animated: true, completion: nil)
     }
     
     @IBAction func answer1ButtonPressed(_ sender: Any) {
+        self.timerActive = false
         self.showAnswer(self.questions[level].answers[0])
     }
     @IBAction func answer2ButtonPressed(_ sender: Any) {
+        self.timerActive = false
         self.showAnswer(self.questions[level].answers[1])
     }
     @IBAction func answer3ButtonPressed(_ sender: Any) {
+        self.timerActive = false
         self.showAnswer(self.questions[level].answers[2])
     }
     @IBAction func answer4ButtonPressed(_ sender: Any) {
+        self.timerActive = false
         self.showAnswer(self.questions[level].answers[3])
+    }
+}//class
+
+//MARK: DialogueMaestroAnswerFeedback
+extension DialogueMaestroGameViewController: DialogueMaestroAnswerFeedback{
+    func startTimer() {
+        self.timerActive = true
     }
 }

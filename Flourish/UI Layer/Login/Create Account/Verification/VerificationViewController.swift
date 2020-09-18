@@ -61,14 +61,34 @@ class VerificationViewController: UIViewController {
             }
             code.append(contentsOf: codeTextField.text!)
         }
-        self.dataSource.verifyMail(code: code)
-        self.delegate?.verificationFinish()
+        self.dataSource.verifyMail(code: code) { [weak self] response in
+            switch response {
+            case .success(let resu):
+                self?.delegate?.verificationFinish()
+            case .error(let error):
+                switch error {
+                case WebServiceError.noInternetConnection:
+                    self?.showAlert(message: "Check your internet connection.")
+                default:
+                    self?.showAlert(message: "Please try again")
+                }
+                
+            }
+        }
     }
+    
+    private func showAlert(title: String = "INFO", message: String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     @IBAction func resendCodeButtonPressed(_ sender: Any) {
         self.dataSource.resetCode()
     }
 }//class
 
+//MARK: UITextFieldDelegate
 extension VerificationViewController: UITextFieldDelegate{
     
     func textFieldDidChangeSelection(_ textField: UITextField) {
@@ -91,7 +111,7 @@ extension VerificationViewController: UITextFieldDelegate{
         textField.text = ""
         textField.borderStyle = .roundedRect
         textField.backgroundColor = UIColor.clear
-
+        
     }
     
 }

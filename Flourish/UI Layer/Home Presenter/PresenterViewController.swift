@@ -13,6 +13,7 @@ protocol PresenterViewControllerDelegare{
     func showGamesVC()
     func showPreferencesVC()
 }
+
 class PresenterViewController: UIViewController {
     var delegate: PresenterViewControllerDelegare?
     var vcToPressent: UIViewController?
@@ -24,7 +25,11 @@ class PresenterViewController: UIViewController {
     @IBOutlet weak var preferencesIndicatorView: UIView!
     @IBOutlet weak var gameButtonView: UIView!
     @IBOutlet var frontComponents: [UIView]!
-    
+    @IBOutlet weak var gameButtonBackgroundView: UIView!
+    @IBOutlet weak var myProgressBottomConstaint: NSLayoutConstraint!
+    @IBOutlet weak var myprogressBottomConstaint: NSLayoutConstraint!
+    @IBOutlet weak var preferencesBottomConstaint: NSLayoutConstraint!
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,14 +91,28 @@ class PresenterViewController: UIViewController {
     }
     
     @IBAction func myProgressButtonPressed(_ sender: Any) {
+        self.showMyProgress()
+    }
+    
+    private func showMyProgress(){
         self.myProgressInticatorView.isHidden = false
         self.preferencesIndicatorView.isHidden = true
         self.myProgressLabel.textColor = #colorLiteral(red: 0.8039215686, green: 0.4156862745, blue: 0.8156862745, alpha: 1)
         self.preferencesLable.textColor = #colorLiteral(red: 0.6196078431, green: 0.6196078431, blue: 0.6862745098, alpha: 1)
         self.delegate?.showMyProgressVC()
     }
-    @IBAction func gameButtonPressed(_ sender: Any) {
+    @IBAction func gameButtonPressed(_ sender: Any){
+        UIView.animate(withDuration: 1) {
+            self.gameButtonView.frame = CGRect(x: 0, y: 0, width: 100, height:  100)
+            self.myProgressBottomConstaint.constant = self.customTabBar.bounds.height * -1.2
+            self.myprogressBottomConstaint.constant = self.customTabBar.bounds.height * -1.2
+            self.preferencesBottomConstaint.constant = self.customTabBar.bounds.height * -1.2
+            self.view.layoutIfNeeded()
+        }
         self.delegate?.showGamesVC()
+        self.myProgressInticatorView.isHidden = true
+        self.preferencesIndicatorView.isHidden = true
+        
     }
     @IBAction func vButtonPressed(_ sender: Any) {
         self.delegate?.showPreferencesVC()
@@ -102,4 +121,20 @@ class PresenterViewController: UIViewController {
         self.myProgressLabel.textColor = #colorLiteral(red: 0.6196078431, green: 0.6196078431, blue: 0.6862745098, alpha: 1)
         self.preferencesLable.textColor = #colorLiteral(red: 0.8039215686, green: 0.4156862745, blue: 0.8156862745, alpha: 1)
     }
+}//class
+
+//MARK:
+extension PresenterViewController: GamesViewControllerFeedback{
+    func backFromGames() {
+        UIView.animate(withDuration: 1) {
+            self.gameButtonView.frame = CGRect(x: 0, y: 0, width: 100, height:  100)
+            self.myProgressBottomConstaint.constant = 0
+            self.myprogressBottomConstaint.constant = 0
+            self.preferencesBottomConstaint.constant = 0
+            self.view.layoutIfNeeded()
+            self.showMyProgress()
+        }
+    }
+    
+    
 }

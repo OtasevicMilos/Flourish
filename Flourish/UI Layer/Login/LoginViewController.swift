@@ -38,8 +38,8 @@ class LoginViewController: UIViewController {
         super.viewDidLayoutSubviews()
         self.setLoginButton()
         
-        self.mailCustomView.nameField.text = "lukamugosa1945@gmail.com"
-        self.passwordCustomView.nameField.text = "12345678"
+//        self.mailCustomView.nameField.text = "lukamugosa1945@gmail.com"
+//        self.passwordCustomView.nameField.text = "12345678"
     }
     
     private func setLoginButton(){

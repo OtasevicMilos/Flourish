@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -84,27 +84,30 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maestro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foI-dq-sdb">
-                                            <rect key="frame" x="20" y="114" width="198.5" height="90.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Maestro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foI-dq-sdb">
+                                            <rect key="frame" x="15" y="114" width="220" height="90.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="220" id="xdw-30-ifq"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" name="Yellowtail-Regular" family="Yellowtail" pointSize="71"/>
                                             <color key="textColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="L5e-7q-hwI">
-                                            <rect key="frame" x="57" y="310" width="300" height="40"/>
+                                            <rect key="frame" x="51.5" y="310" width="311.5" height="40"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Y7-7A-UMW">
-                                                    <rect key="frame" x="0.0" y="0.0" width="116" height="40"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="125" height="40"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="question-mark-circle" translatesAutoresizingMaskIntoConstraints="NO" id="KGT-Dd-dKR">
-                                                            <rect key="frame" x="5" y="10" width="20" height="20"/>
+                                                            <rect key="frame" x="10" y="10" width="20" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="IAU-aF-Ubo"/>
                                                                 <constraint firstAttribute="width" constant="20" id="OGi-xb-uVS"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cx2-rT-inT">
-                                                            <rect key="frame" x="30" y="11" width="81" height="18"/>
+                                                            <rect key="frame" x="35" y="11" width="80" height="18"/>
                                                             <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="16"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -112,8 +115,8 @@
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.95595854520000001" green="0.70565909149999995" blue="0.87452584509999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="Cx2-rT-inT" secondAttribute="trailing" constant="5" id="6WP-yU-hNM"/>
-                                                        <constraint firstItem="KGT-Dd-dKR" firstAttribute="leading" secondItem="4Y7-7A-UMW" secondAttribute="leading" constant="5" id="Hlj-KX-6ca"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Cx2-rT-inT" secondAttribute="trailing" constant="10" id="6WP-yU-hNM"/>
+                                                        <constraint firstItem="KGT-Dd-dKR" firstAttribute="leading" secondItem="4Y7-7A-UMW" secondAttribute="leading" constant="10" id="Hlj-KX-6ca"/>
                                                         <constraint firstAttribute="height" constant="40" id="Me1-KQ-0pw"/>
                                                         <constraint firstItem="KGT-Dd-dKR" firstAttribute="centerY" secondItem="4Y7-7A-UMW" secondAttribute="centerY" id="c0O-ti-Ugi"/>
                                                         <constraint firstItem="Cx2-rT-inT" firstAttribute="centerY" secondItem="KGT-Dd-dKR" secondAttribute="centerY" id="frz-8E-3Lb"/>
@@ -121,7 +124,7 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FNU-Nm-ssg">
-                                                    <rect key="frame" x="123" y="0.0" width="79" height="40"/>
+                                                    <rect key="frame" x="132" y="0.0" width="79" height="40"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ttimer" translatesAutoresizingMaskIntoConstraints="NO" id="QAd-3A-QMx">
                                                             <rect key="frame" x="10" y="10" width="20" height="20"/>
@@ -130,7 +133,7 @@
                                                                 <constraint firstAttribute="height" constant="20" id="gRn-eG-eQE"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60s  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51f-Kp-qiq">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51f-Kp-qiq">
                                                             <rect key="frame" x="35" y="11" width="34" height="18"/>
                                                             <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="16"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -148,7 +151,7 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kVI-9y-lGk">
-                                                    <rect key="frame" x="209" y="0.0" width="91" height="40"/>
+                                                    <rect key="frame" x="218" y="0.0" width="93.5" height="40"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lives" translatesAutoresizingMaskIntoConstraints="NO" id="0aC-dY-eST">
                                                             <rect key="frame" x="5" y="10" width="20" height="20"/>
@@ -158,7 +161,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 lives" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7E-3b-Q7u">
-                                                            <rect key="frame" x="30" y="11" width="56" height="18"/>
+                                                            <rect key="frame" x="35" y="11" width="48.5" height="18"/>
                                                             <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="16"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -166,11 +169,11 @@
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.95595854520000001" green="0.70565909149999995" blue="0.87452584509999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="P7E-3b-Q7u" secondAttribute="trailing" constant="5" id="3CK-z6-rMJ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="P7E-3b-Q7u" secondAttribute="trailing" constant="10" id="3CK-z6-rMJ"/>
                                                         <constraint firstItem="P7E-3b-Q7u" firstAttribute="centerY" secondItem="0aC-dY-eST" secondAttribute="centerY" id="D2s-wD-hhk"/>
                                                         <constraint firstItem="0aC-dY-eST" firstAttribute="centerY" secondItem="kVI-9y-lGk" secondAttribute="centerY" id="Lir-cR-maH"/>
                                                         <constraint firstAttribute="height" constant="40" id="qF1-fU-GaY"/>
-                                                        <constraint firstItem="P7E-3b-Q7u" firstAttribute="leading" secondItem="0aC-dY-eST" secondAttribute="trailing" constant="5" id="stm-cL-Tof"/>
+                                                        <constraint firstItem="P7E-3b-Q7u" firstAttribute="leading" secondItem="0aC-dY-eST" secondAttribute="trailing" constant="10" id="stm-cL-Tof"/>
                                                         <constraint firstItem="0aC-dY-eST" firstAttribute="leading" secondItem="kVI-9y-lGk" secondAttribute="leading" constant="5" id="zeq-JI-Sip"/>
                                                     </constraints>
                                                 </view>
@@ -194,7 +197,7 @@
                                         <constraint firstItem="L5e-7q-hwI" firstAttribute="top" secondItem="BnU-k8-9Ow" secondAttribute="bottom" constant="10" id="dCG-8u-5ee"/>
                                         <constraint firstItem="8hN-lU-XPQ" firstAttribute="centerY" secondItem="4yp-gs-kH2" secondAttribute="centerY" id="eOS-gn-PhD"/>
                                         <constraint firstItem="BnU-k8-9Ow" firstAttribute="top" secondItem="Qhj-AV-mve" secondAttribute="top" constant="50" id="hhS-v7-pPC"/>
-                                        <constraint firstItem="foI-dq-sdb" firstAttribute="leading" secondItem="Qhj-AV-mve" secondAttribute="leading" constant="20" id="lur-Uk-kZJ"/>
+                                        <constraint firstItem="foI-dq-sdb" firstAttribute="leading" secondItem="Qhj-AV-mve" secondAttribute="leading" constant="15" id="lur-Uk-kZJ"/>
                                         <constraint firstItem="AHy-xG-yBP" firstAttribute="leading" secondItem="Qhj-AV-mve" secondAttribute="leading" constant="20" id="vdp-Fx-sFi"/>
                                     </constraints>
                                 </view>
@@ -202,18 +205,14 @@
                                     <rect key="frame" x="0.0" y="400" width="414" height="134.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yr-B3-UQK">
-                                            <rect key="frame" x="20" y="10" width="33" height="16"/>
+                                            <rect key="frame" x="20" y="10" width="33" height="31.5"/>
                                             <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="14"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVY-rN-Ud9">
-                                            <rect key="frame" x="20" y="46" width="374" height="78.5"/>
-                                            <string key="text">We can predict how likely a dialog will yield 
-mutual learning, by looking at how people make 
-statements and ask questions. Being able to 
-choose appropriate dialog style leads to better 
-communication and improved relationships.</string>
+                                            <rect key="frame" x="20" y="61.5" width="374" height="63"/>
+                                            <string key="text">We can predict how likely a dialog will yield mutual learning, by looking how people make statements and ask question.Being able to choose appropriate dialog style leads to better communication and improved relationships.</string>
                                             <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="14"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -237,10 +236,8 @@ communication and improved relationships.</string>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FlY-56-zu6">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="earn to use appropriate dialogue strategy depending on situation." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FlY-56-zu6">
                                             <rect key="frame" x="20" y="142.5" width="374" height="31.5"/>
-                                            <string key="text">Learn to use appropriate dialogue strategy 
-depending on situation</string>
                                             <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="14"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -285,14 +282,15 @@ depending on situation</string>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFq-MN-k8T">
                                     <rect key="frame" x="0.0" y="853" width="414" height="134.5"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RULS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WvY-QJ-VAS">
-                                            <rect key="frame" x="20" y="10" width="35.5" height="63"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RULES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WvY-QJ-VAS">
+                                            <rect key="frame" x="20" y="10" width="44" height="47"/>
                                             <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="14"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose adequate level of advocacy and inquiry appropriate for described situation" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1Z-1v-Nfj">
-                                            <rect key="frame" x="20" y="93" width="374" height="31.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1Z-1v-Nfj">
+                                            <rect key="frame" x="20" y="77" width="374" height="47.5"/>
+                                            <string key="text">Game is limited to 60 seconds. You have 3 lives. If time expires or you lose all lives game is over. For each correct answer you gain an point. For each mistake you lose life.</string>
                                             <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="14"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
