@@ -9,7 +9,7 @@
 import Foundation
 
 struct ApiRequest{
-    private let baseUrlString: String = "http://flourish.proserver.me"
+    let baseUrlString: String = "http://flourish.proserver.me"
     private let endpoint: Endpoint
     
     init(endpoint: Endpoint){

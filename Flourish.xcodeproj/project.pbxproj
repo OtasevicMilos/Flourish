@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0770432D25147F9100E038FE /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0770432C25147F9100E038FE /* UILabel.swift */; };
 		1D0AE0E0250A4FF800D54A3E /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0AE0DF250A4FF800D54A3E /* ApiRequest.swift */; };
 		1D0AE0E3250A505200D54A3E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0AE0E2250A505200D54A3E /* Endpoint.swift */; };
 		1D0AE0E6250A513400D54A3E /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0AE0E4250A513300D54A3E /* WebService.swift */; };
@@ -145,8 +146,6 @@
 		1DF5B5882508FCAA006D3064 /* GamesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DF5B57E2508FCAA006D3064 /* GamesViewController.xib */; };
 		1DF5B5A22508FD2D006D3064 /* AttributesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF5B5A02508FD2D006D3064 /* AttributesView.swift */; };
 		1DF5B5A32508FD2D006D3064 /* AttributesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DF5B5A12508FD2D006D3064 /* AttributesView.xib */; };
-		1DF5B5A72508FD58006D3064 /* PreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DF5B5A52508FD58006D3064 /* PreferencesViewController.xib */; };
-		1DF5B5A82508FD58006D3064 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF5B5A62508FD58006D3064 /* PreferencesViewController.swift */; };
 		1DF5B5BA2508FDBD006D3064 /* QuizzInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DF5B5B32508FDBD006D3064 /* QuizzInfoViewController.xib */; };
 		1DF5B5BB2508FDBD006D3064 /* QuizzInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF5B5B42508FDBD006D3064 /* QuizzInfoViewController.swift */; };
 		1DF5B5BC2508FDBD006D3064 /* QuizzViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DF5B5B62508FDBD006D3064 /* QuizzViewCollectionViewCell.xib */; };
@@ -165,9 +164,11 @@
 		1DF5B5DC250A22DB006D3064 /* GameCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF5B5DA250A22DB006D3064 /* GameCardTableViewCell.swift */; };
 		1DF5B5DD250A22DB006D3064 /* GameCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DF5B5DB250A22DB006D3064 /* GameCardTableViewCell.xib */; };
 		1DF5B5DF250A242D006D3064 /* MyProgressVCDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF5B5DE250A242D006D3064 /* MyProgressVCDataSource.swift */; };
+		8F865F95578F6CBFFE63762C /* Pods_Flourish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451057B7C8FF96A695534554 /* Pods_Flourish.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0770432C25147F9100E038FE /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		1D0AE0DF250A4FF800D54A3E /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		1D0AE0E2250A505200D54A3E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		1D0AE0E4250A513300D54A3E /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
@@ -309,8 +310,6 @@
 		1DF5B57E2508FCAA006D3064 /* GamesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GamesViewController.xib; sourceTree = "<group>"; };
 		1DF5B5A02508FD2D006D3064 /* AttributesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributesView.swift; sourceTree = "<group>"; };
 		1DF5B5A12508FD2D006D3064 /* AttributesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttributesView.xib; sourceTree = "<group>"; };
-		1DF5B5A52508FD58006D3064 /* PreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesViewController.xib; sourceTree = "<group>"; };
-		1DF5B5A62508FD58006D3064 /* PreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		1DF5B5B32508FDBD006D3064 /* QuizzInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuizzInfoViewController.xib; sourceTree = "<group>"; };
 		1DF5B5B42508FDBD006D3064 /* QuizzInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizzInfoViewController.swift; sourceTree = "<group>"; };
 		1DF5B5B62508FDBD006D3064 /* QuizzViewCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuizzViewCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -329,6 +328,9 @@
 		1DF5B5DA250A22DB006D3064 /* GameCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCardTableViewCell.swift; sourceTree = "<group>"; };
 		1DF5B5DB250A22DB006D3064 /* GameCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameCardTableViewCell.xib; sourceTree = "<group>"; };
 		1DF5B5DE250A242D006D3064 /* MyProgressVCDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProgressVCDataSource.swift; sourceTree = "<group>"; };
+		451057B7C8FF96A695534554 /* Pods_Flourish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flourish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA12761CC2E79297E4BEAD45 /* Pods-Flourish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flourish.debug.xcconfig"; path = "Target Support Files/Pods-Flourish/Pods-Flourish.debug.xcconfig"; sourceTree = "<group>"; };
+		DC766DB826C7BB466C82414A /* Pods-Flourish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flourish.release.xcconfig"; path = "Target Support Files/Pods-Flourish/Pods-Flourish.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -336,6 +338,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F865F95578F6CBFFE63762C /* Pods_Flourish.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,14 +508,6 @@
 			path = QuizzCells;
 			sourceTree = "<group>";
 		};
-		1D4B1C00251260A800EFB4BE /* VISAK?????? */ = {
-			isa = PBXGroup;
-			children = (
-				1DF5B5A42508FD58006D3064 /* Preferences View Controller */,
-			);
-			path = "VISAK??????";
-			sourceTree = "<group>";
-		};
 		1D58C9F02510B8E5004F67F0 /* Games */ = {
 			isa = PBXGroup;
 			children = (
@@ -596,6 +591,8 @@
 				1D623A992507A7A500E6187E /* Flourish */,
 				1D623A982507A7A500E6187E /* Products */,
 				1D0AE0EF250A536100D54A3E /* Interactors */,
+				BBBB7C8F25C026BC35CB0C76 /* Pods */,
+				FB018F1BEC631827524295B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -631,7 +628,6 @@
 				1DF5B5C025090C2C006D3064 /* Home Presenter */,
 				1D58C9F02510B8E5004F67F0 /* Games */,
 				1D4B1BE82512414600EFB4BE /* Quizz */,
-				1D4B1C00251260A800EFB4BE /* VISAK?????? */,
 			);
 			path = "UI Layer";
 			sourceTree = "<group>";
@@ -692,6 +688,7 @@
 				1D0AE109250A710E00D54A3E /* Stirng.swift */,
 				1D0AE10B250A754900D54A3E /* UIViewController.swift */,
 				1D881FD1250BA0A60073485B /* UIView.swift */,
+				0770432C25147F9100E038FE /* UILabel.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -912,15 +909,6 @@
 			path = AttributesView;
 			sourceTree = "<group>";
 		};
-		1DF5B5A42508FD58006D3064 /* Preferences View Controller */ = {
-			isa = PBXGroup;
-			children = (
-				1DF5B5A52508FD58006D3064 /* PreferencesViewController.xib */,
-				1DF5B5A62508FD58006D3064 /* PreferencesViewController.swift */,
-			);
-			path = "Preferences View Controller";
-			sourceTree = "<group>";
-		};
 		1DF5B5B22508FDBD006D3064 /* Quizz Info  */ = {
 			isa = PBXGroup;
 			children = (
@@ -973,6 +961,23 @@
 			path = MyProgressCells;
 			sourceTree = "<group>";
 		};
+		BBBB7C8F25C026BC35CB0C76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA12761CC2E79297E4BEAD45 /* Pods-Flourish.debug.xcconfig */,
+				DC766DB826C7BB466C82414A /* Pods-Flourish.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FB018F1BEC631827524295B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				451057B7C8FF96A695534554 /* Pods_Flourish.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -980,9 +985,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D623AAB2507A7A900E6187E /* Build configuration list for PBXNativeTarget "Flourish" */;
 			buildPhases = (
+				E368798D788A02B8F3898024 /* [CP] Check Pods Manifest.lock */,
 				1D623A932507A7A500E6187E /* Sources */,
 				1D623A942507A7A500E6187E /* Frameworks */,
 				1D623A952507A7A500E6187E /* Resources */,
+				9EAACB56C8EE553A5BFCF95C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1075,12 +1082,53 @@
 				1DA9ACA92513A422004226A7 /* IntroVC.xib in Resources */,
 				1D623AC92507AE8100E6187E /* Ubuntu-Bold.ttf in Resources */,
 				1DF5B5822508FCAA006D3064 /* GamesFooterCell.xib in Resources */,
-				1DF5B5A72508FD58006D3064 /* PreferencesViewController.xib in Resources */,
 				1DF5B5C425090C47006D3064 /* PresenterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9EAACB56C8EE553A5BFCF95C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flourish/Pods-Flourish-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flourish/Pods-Flourish-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Flourish/Pods-Flourish-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E368798D788A02B8F3898024 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flourish-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D623A932507A7A500E6187E /* Sources */ = {
@@ -1112,7 +1160,6 @@
 				1D881FD2250BA0A60073485B /* UIView.swift in Sources */,
 				1D623ACF2507AFCF00E6187E /* Gradient.swift in Sources */,
 				1D4C6954250F5903001669DD /* Score.swift in Sources */,
-				1DF5B5A82508FD58006D3064 /* PreferencesViewController.swift in Sources */,
 				1DF5B5CD250A0354006D3064 /* CheckInboxViewController.swift in Sources */,
 				1D90C5CB2507C456004817ED /* IntroCollectionViewCell.swift in Sources */,
 				1D4C6952250F588C001669DD /* MyProgressUseCase.swift in Sources */,
@@ -1174,6 +1221,7 @@
 				1D4B1BFF2512575900EFB4BE /* QuizzVCDataSource.swift in Sources */,
 				1D90C5D02507C5A6004817ED /* ForgotPasswordViewController.swift in Sources */,
 				1DD2C7F025136DA100A398DE /* QuizzSingleResultViewController.swift in Sources */,
+				0770432D25147F9100E038FE /* UILabel.swift in Sources */,
 				1D0AE0F3250A53BA00D54A3E /* User.swift in Sources */,
 				1DF5B5C725091E03006D3064 /* MyProgressViewController.swift in Sources */,
 				1D4C696C2510AB5D001669DD /* ForgotPasswordInteractor.swift in Sources */,
@@ -1332,6 +1380,7 @@
 		};
 		1D623AAC2507A7A900E6187E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA12761CC2E79297E4BEAD45 /* Pods-Flourish.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Flourish/Flourish.entitlements;
@@ -1343,7 +1392,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.amlitudo.Flourish;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amlitudo.FlourishApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1352,6 +1401,7 @@
 		};
 		1D623AAD2507A7A900E6187E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC766DB826C7BB466C82414A /* Pods-Flourish.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Flourish/Flourish.entitlements;
@@ -1363,7 +1413,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.amlitudo.Flourish;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amlitudo.FlourishApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

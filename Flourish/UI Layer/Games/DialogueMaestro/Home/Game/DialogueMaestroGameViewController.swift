@@ -78,6 +78,23 @@ class DialogueMaestroGameViewController: UIViewController {
         self.timeLabel.text = "\(time)s "
     }
     
+    private func timeEnd(){
+        self.level += 1
+        self.time = 60
+        self.lifes -= 1
+        self.points.append(0)
+        self.setlevel()
+        
+        switch self.lifes {
+        case 2:
+            self.life1Image.image = UIImage(named: "noLife")
+        case 1:
+            self.life2Imafge.image = UIImage(named: "noLife")
+        default:
+            self.delegate?.gameOver()
+        }
+    }
+    
     private func showAnswer(_ answer: Answer){
         self.level += 1
         self.time = 60

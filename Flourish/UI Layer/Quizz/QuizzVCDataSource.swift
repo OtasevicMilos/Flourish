@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 protocol QuizzVCDataSourceFeedback {
     func showResult()
@@ -43,7 +44,7 @@ extension QuizzVCDataSource: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "quizzCell", for: indexPath)
         guard let quizzCell = cell as? QuizzViewCollectionViewCell else {return cell}
-        quizzCell.questionLabel.text = quizz.questions[indexPath.row].translations[0].title
+        quizzCell.questionLabel.text = quizz.questions[indexPath.row].translations[0].title  
         return quizzCell
     }
 }

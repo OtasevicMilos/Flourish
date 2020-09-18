@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage 
 
 protocol DialogueMaestroCongratulationViewControllerDelegate{
     func finishDialogueMaestro()
@@ -24,6 +25,7 @@ class DialogueMaestroCongratulationViewController: UIViewController {
     @IBOutlet var roundShadowViwes: [UIView]!
     @IBOutlet weak var userImageView: UIView!
     @IBOutlet weak var progressBackgroundView: UIView!
+    @IBOutlet weak var userImage: UIImageView!
     
     init(dataSource: DialogueMaestroCongratulationVCDataSource){
         self.dataSource = dataSource
@@ -49,13 +51,13 @@ class DialogueMaestroCongratulationViewController: UIViewController {
         self.makeLine()
         if let user = USER{
             self.nameLabel.text = "\(user.name)!"
+            self.userImage.sd_setImage(with: URL(string: "http://flourish.proserver.me\(user.profileImage)"), placeholderImage: nil)
         }
         self.roundShadowViwes.forEach { view in
             view.layer.cornerRadius = view.bounds.height / 2
             view.layer.shadowColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
             view.layer.shadowRadius = 2
             view.layer.shadowOpacity = 2
-
         }
     }
 

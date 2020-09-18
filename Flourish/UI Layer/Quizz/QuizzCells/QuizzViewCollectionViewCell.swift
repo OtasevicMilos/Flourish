@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class QuizzViewCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var questionLabel: UILabel!

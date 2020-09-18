@@ -19,15 +19,16 @@ class LoginVCDataSource{
            self.dependencies = dependencies
        }
     
-    func loginUser(email: String, password: String, completion: @escaping ((Bool) -> ())){
-        self.dependencies.loginUseCase.login(email: email, password: password) {  [weak self] response in
-            switch response{
-            case .success( _):
-                completion(true)
-            case .error(let error):
-                print(error)
-                completion(false)
-            }
-        }
+    func loginUser(email: String, password: String, completion: @escaping ((Response<User>) -> ())){
+        self.dependencies.loginUseCase.login(email: email, password: password, completion: completion)
+//        self.dependencies.loginUseCase.login(email: email, password: password) {  [weak self] response in
+//            switch response{
+//            case .success( _):
+//                completion(true)
+//            case .error(let error):
+//                print(error)
+//                completion(false)
+//            }
+//        }
     }
 }//class

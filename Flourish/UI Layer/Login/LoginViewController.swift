@@ -63,8 +63,8 @@ class LoginViewController: UIViewController {
     
     private func checkForm() -> Bool{
         if mailCustomView.nameField.text?.isEmpty ?? true || passwordCustomView.nameField.text?.isEmpty ?? true{
-        self.showAlert(message: "You have not filled in all the fields.")
-        return false
+            self.showAlert(message: "You have not filled in all the fields.")
+            return false
         }
         guard let password = self.passwordCustomView.nameField.text else {return false}
         guard let mail = self.mailCustomView.nameField.text else {return false}
@@ -88,11 +88,18 @@ class LoginViewController: UIViewController {
     @IBAction func singinButtonPressed(_ sender: Any) {
         if !checkForm(){ return }
         self.dataSource.loginUser(email: self.mailCustomView.nameField.text!, password: self.passwordCustomView.nameField.text!){ response in
-            if response{
+            switch response{
+            case .success(let user):
                 self.delegate?.userSingIn()
-            }else{
-                self.showAlert(message: "The mail or password is incorrect.")
-
+            case .error(let error):
+                switch error {
+                case WebServiceError.noInternetConnection:
+                    self.showAlert(message: "Check your internet connection.")
+                default:
+                    self.showAlert(message: "The mail or password is incorrect.")
+                }
+                
+                
             }
         }
     }

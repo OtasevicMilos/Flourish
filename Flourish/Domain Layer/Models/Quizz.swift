@@ -17,13 +17,13 @@ struct Quizz: Codable {
 struct QuizzQuestion: Codable {
     let id: Int
     let questionCategoryID: Int
-//    let image: Image?
+    let image: String
     let translations: [QuizzTranslation]
     
     enum CodingKeys: String, CodingKey {
         case id
         case questionCategoryID = "question_category_id"
-//        case image
+        case image
         case translations
     }
 }

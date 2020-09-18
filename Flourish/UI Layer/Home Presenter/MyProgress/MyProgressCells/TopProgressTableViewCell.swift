@@ -16,6 +16,7 @@ class TopProgressTableViewCell: UITableViewCell {
     @IBOutlet weak var selfAwarenessLable: UILabel!
     @IBOutlet weak var selfMangement: UILabel!
     @IBOutlet weak var holderView: UIView!
+    @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var test: GraphView!
 
     @IBOutlet weak var selfAwarenessValueLabel: UILabel!
@@ -35,10 +36,11 @@ class TopProgressTableViewCell: UITableViewCell {
         self.selfmanagmentValueLabel.text = "\(selfMangement)"
         self.relationshipManagmentValueLabel.text = "\(relationshipManagment)"
         self.test.setCustomShapeLayer(socialAwareness: socialAwareness, selfAwareness: selfAwareness, selfMangement: selfMangement, relationshipManagment: relationshipManagment)
-        
     }
     
     private func setView(){
+        self.userImage.layer.cornerRadius = self.userImage.bounds.width / 2
+        self.userImage.clipsToBounds = true
         self.gradientView.layer.cornerRadius = 10
         self.gradientView.clipsToBounds = true
         self.gradientView.setFlourishGradien(withColors: [ #colorLiteral(red: 0.7176470588, green: 0.5647058824, blue: 0.9215686275, alpha: 1).cgColor, #colorLiteral(red: 0.8941176471, green: 0.3568627451, blue: 0.5529411765, alpha: 1).cgColor],start: CGPoint(x: 0, y: 1), end: CGPoint(x: 1, y: 0))

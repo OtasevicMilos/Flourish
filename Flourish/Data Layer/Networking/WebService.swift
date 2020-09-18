@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Reachability
 
 protocol WebService: class{
     func execute<T: Decodable>(_ request: URLRequest, callBack: @escaping(Response<T>) -> Void)
@@ -21,10 +22,10 @@ class WebServiceProvide: WebService{
     
     func execute<T>(_ request: URLRequest, callBack: @escaping (Response<T>) -> Void) where T : Decodable{
         do{
-//                if try Reachability()?.connection == Reachability.Connection.none{
-//                    callBack(.error(WebServiceError.noInternetConnection))
-//                    return
-//            }
+                if try Reachability()?.connection == Reachability.Connection.none{
+                    callBack(.error(WebServiceError.noInternetConnection))
+                    return
+            }
                 }catch {
                     print("ff")
                 }
