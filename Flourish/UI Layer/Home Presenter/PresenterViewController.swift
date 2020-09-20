@@ -104,9 +104,9 @@ class PresenterViewController: UIViewController {
     @IBAction func gameButtonPressed(_ sender: Any){
         UIView.animate(withDuration: 1) {
             self.gameButtonView.frame = CGRect(x: 0, y: 0, width: 100, height:  100)
-            self.myProgressBottomConstaint.constant = self.customTabBar.bounds.height * -1.2
-            self.myprogressBottomConstaint.constant = self.customTabBar.bounds.height * -1.2
-            self.preferencesBottomConstaint.constant = self.customTabBar.bounds.height * -1.2
+            self.myProgressBottomConstaint.constant = self.customTabBar.bounds.height * -1.3
+            self.myprogressBottomConstaint.constant = self.customTabBar.bounds.height * -1.3
+            self.preferencesBottomConstaint.constant = self.customTabBar.bounds.height * -1.3
             self.view.layoutIfNeeded()
         }
         self.delegate?.showGamesVC()

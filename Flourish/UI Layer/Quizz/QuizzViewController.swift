@@ -29,6 +29,8 @@ class QuizzViewController: UIViewController {
     @IBOutlet var nextButtonBC: NSLayoutConstraint!
     @IBOutlet var quizzCollectionView: UICollectionView!
     @IBOutlet var currentQuestionLabel: UILabel!
+    @IBOutlet var numberViews: [UIView]!
+    
     var answers = [Int]()
     var curentAnswer = 0
     
@@ -50,12 +52,15 @@ class QuizzViewController: UIViewController {
         quizzCollectionView.register(UINib(nibName:"QuizzViewCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "quizzCell")
         quizzCollectionView.dataSource = self.dataSource
         quizzCollectionView.delegate = self
-        //   drawArch()
+        drawArch()
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         contentView.setFlourishGradien(withColors: [#colorLiteral(red: 0.9987233281, green: 0.835398972, blue: 0.3865250945, alpha: 1), #colorLiteral(red: 0.9942321181, green: 0.8947016597, blue: 0.6533489227, alpha: 1), #colorLiteral(red: 0.9463223815, green: 0.8453899622, blue: 0.9437918067, alpha: 1), #colorLiteral(red: 0.8822284341, green: 0.3810956478, blue: 0.5851709247, alpha: 1)], start: CGPoint(x: 0, y: 0), end: CGPoint(x: 1, y: 1))
+        
+        let size = CGSize(width: 256, height: 256)                                  
     }
+    
     @IBAction func nextButtonTapped(_ sender: Any) {
         self.answers.append(curentAnswer)
         if currentQuestion < (self.dataSource.quizz.questions.count - 1) {
@@ -163,26 +168,26 @@ class QuizzViewController: UIViewController {
         recognizerView.bringSubviewToFront(answerView)
     }
     func drawArch(){
+        createShortLine(color: #colorLiteral(red: 0.8898188472, green: 0.8014473319, blue: 0.8829014897, alpha: 1), start: numberViews[0].center, end: numberViews[1].center)
+        createShortLine(color: #colorLiteral(red: 0.886182785, green: 0.7775782943, blue: 0.9015724063, alpha: 1), start: numberViews[1].center, end: numberViews[2].center)
+        createShortLine(color: #colorLiteral(red: 0.8862336278, green: 0.7844361663, blue: 0.8977819681, alpha: 1), start: numberViews[2].center, end: numberViews[3].center)
+        createShortLine(color: #colorLiteral(red: 0.8928123116, green: 0.7205656171, blue: 0.8531989455, alpha: 1), start: numberViews[3].center, end: numberViews[4].center)
+
+    }
+    
+    private func createShortLine(color: UIColor,start: CGPoint, end: CGPoint){
         let path = UIBezierPath()
-        //37
-        //37
-        path.addArc(withCenter: CGPoint(x: 40, y: 147), radius: 31, startAngle: 0, endAngle: 2*CGFloat.pi, clockwise: true)
-        
-        path.addArc(withCenter: CGPoint(x: 89, y: 58), radius: 32, startAngle: 0, endAngle: 2*CGFloat.pi, clockwise: true)
-        path.close()
-        path.addArc(withCenter: CGPoint(x: 174, y: 40), radius: 32, startAngle: 0, endAngle: 2*CGFloat.pi, clockwise: true)
-        path.addArc(withCenter: CGPoint(x: 265, y: 58), radius: 32, startAngle: 0, endAngle: 2*CGFloat.pi, clockwise: true)
-        path.addArc(withCenter: CGPoint(x: 310, y: 147), radius: 32, startAngle: 0, endAngle: 2*CGFloat.pi, clockwise: true)
-        
+        path.move(to: start)
+        path.addLine(to: end)
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = path.cgPath
-        shapeLayer.lineWidth=15
-        shapeLayer.strokeColor = UIColor(red: 48/255, green: 48/255, blue: 109/255, alpha: 0.2).withAlphaComponent(0.2).cgColor
+        shapeLayer.lineWidth = 5
+        shapeLayer.strokeColor = color.cgColor
         shapeLayer.fillColor = UIColor.clear.cgColor
         
         recognizerView.layer.insertSublayer(shapeLayer, at: 0)
-        
     }
+    
     @IBAction func exitButtonPressed(_ sender: Any) {
         self.delegate?.exitQuizz()
     }

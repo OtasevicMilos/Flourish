@@ -38,8 +38,8 @@ class LoginViewController: UIViewController {
         super.viewDidLayoutSubviews()
         self.setLoginButton()
         
-//        self.mailCustomView.nameField.text = "lukamugosa1945@gmail.com"
-//        self.passwordCustomView.nameField.text = "12345678"
+        self.mailCustomView.nameField.text = "lukamugosa1945@gmail.com"
+        self.passwordCustomView.nameField.text = "12345678"
     }
     
     private func setLoginButton(){
@@ -58,6 +58,7 @@ class LoginViewController: UIViewController {
         self.loginButton.roundCorners([.bottomLeft, .topRight], radius: 20)
         self.loginButton.clipsToBounds = true
         self.downLineView.setFlourishGradien()
+        self.mailCustomView.nameField.keyboardType = .emailAddress
         self.passwordCustomView.nameField.isSecureTextEntry = true
     }
     

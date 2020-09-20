@@ -67,6 +67,8 @@ class DialogueMaestroViewController: UIViewController {
         self.goalDescriptionLabel.text = data.translations[0].goalText
         self.descriptionDescriptionLabel.text = data.translations[0].gameDescription
         self.rulsDescription.text = data.translations[0].rules
+        self.questionLabel.text = "\(data.questions.count) questions"
+
     }
     
     @IBAction func startButtonPressed(_ sender: Any) {

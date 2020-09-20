@@ -36,6 +36,11 @@ class GamesViewController: UIViewController {
         self.setView()
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        self.beckButtonViewLeftConstraint.constant = -200
+    }
+    
+    
     private func setView(){
         self.beckButtonView.layer.cornerRadius = self.beckButtonView.bounds.width / 2
         self.beckButtonView.setFlourishGradien(withColors: [#colorLiteral(red: 0.5568627451, green: 0.9137254902, blue: 1, alpha: 1), #colorLiteral(red: 0.7764705882, green: 0.4352941176, blue: 0.8941176471, alpha: 1), #colorLiteral(red: 0.9607843137, green: 0.3098039216, blue: 0.3529411765, alpha: 1)], start: CGPoint(x: 0, y: 1), end: CGPoint(x: 1, y: 0))

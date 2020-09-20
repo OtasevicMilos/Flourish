@@ -10,6 +10,7 @@ import UIKit
 
 protocol MyProgressViewControllerDelegate {
     func startDialogueMaestro()
+    func startStrngthsAndWeaknesses()
 }
 
 class MyProgressViewController: UIViewController {
@@ -55,6 +56,10 @@ extension MyProgressViewController: UITableViewDelegate{
 
 //MARK: MyProgressVCDataSourceFeedback
 extension MyProgressViewController: MyProgressVCDataSourceFeedback{
+    func startStrngthsAndWeaknesses() {
+        self.delegate?.startStrngthsAndWeaknesses()
+    }
+    
     
     func startDialogueMaestro() {
         self.delegate?.startDialogueMaestro()

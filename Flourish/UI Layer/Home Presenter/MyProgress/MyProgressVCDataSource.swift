@@ -16,6 +16,7 @@ protocol MyProgressVCDataSourceDependencies{
 protocol MyProgressVCDataSourceFeedback{
     func reloadData()
     func startDialogueMaestro()
+    func startStrngthsAndWeaknesses()
 }
 
 class MyProgressVCDataSource: NSObject{
@@ -96,7 +97,11 @@ extension MyProgressVCDataSource: UITableViewDataSource{
             gameCardCell.callback = {
                 self.feedback?.startDialogueMaestro()
             }
-        }else{
+        }else if indexPath.row == 2{
+            gameCardCell.callback = {
+                self.feedback?.startStrngthsAndWeaknesses()
+            }
+        } else{
             gameCardCell.callback = {}
         }
         gameCardCell.gameImage.image = images[indexPath.row - 1]

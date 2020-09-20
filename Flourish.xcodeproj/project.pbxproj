@@ -11,6 +11,9 @@
 		0770432F2514B53900E038FE /* GamesVCDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0770432E2514B53900E038FE /* GamesVCDataSource.swift */; };
 		077043322514CEDB00E038FE /* SpaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077043302514CEDB00E038FE /* SpaceTableViewCell.swift */; };
 		077043332514CEDB00E038FE /* SpaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 077043312514CEDB00E038FE /* SpaceTableViewCell.xib */; };
+		0770433B2515E71300E038FE /* StrengthsAndWeaknessesHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077043392515E71300E038FE /* StrengthsAndWeaknessesHomeViewController.swift */; };
+		0770433C2515E71300E038FE /* StrengthsAndWeaknessesHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0770433A2515E71300E038FE /* StrengthsAndWeaknessesHomeViewController.xib */; };
+		0770433E2515E98D00E038FE /* StrengthsAndWeaknessesHomeVCDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0770433D2515E98D00E038FE /* StrengthsAndWeaknessesHomeVCDataSource.swift */; };
 		1D0AE0E0250A4FF800D54A3E /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0AE0DF250A4FF800D54A3E /* ApiRequest.swift */; };
 		1D0AE0E3250A505200D54A3E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0AE0E2250A505200D54A3E /* Endpoint.swift */; };
 		1D0AE0E6250A513400D54A3E /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0AE0E4250A513300D54A3E /* WebService.swift */; };
@@ -175,6 +178,9 @@
 		0770432E2514B53900E038FE /* GamesVCDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesVCDataSource.swift; sourceTree = "<group>"; };
 		077043302514CEDB00E038FE /* SpaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceTableViewCell.swift; sourceTree = "<group>"; };
 		077043312514CEDB00E038FE /* SpaceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpaceTableViewCell.xib; sourceTree = "<group>"; };
+		077043392515E71300E038FE /* StrengthsAndWeaknessesHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrengthsAndWeaknessesHomeViewController.swift; sourceTree = "<group>"; };
+		0770433A2515E71300E038FE /* StrengthsAndWeaknessesHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StrengthsAndWeaknessesHomeViewController.xib; sourceTree = "<group>"; };
+		0770433D2515E98D00E038FE /* StrengthsAndWeaknessesHomeVCDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrengthsAndWeaknessesHomeVCDataSource.swift; sourceTree = "<group>"; };
 		1D0AE0DF250A4FF800D54A3E /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		1D0AE0E2250A505200D54A3E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		1D0AE0E4250A513300D54A3E /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
@@ -351,6 +357,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		077043382515E6C300E038FE /* Strengths & Weaknesses */ = {
+			isa = PBXGroup;
+			children = (
+				077043392515E71300E038FE /* StrengthsAndWeaknessesHomeViewController.swift */,
+				0770433A2515E71300E038FE /* StrengthsAndWeaknessesHomeViewController.xib */,
+				0770433D2515E98D00E038FE /* StrengthsAndWeaknessesHomeVCDataSource.swift */,
+			);
+			path = "Strengths & Weaknesses";
+			sourceTree = "<group>";
+		};
 		1D0AE0DD250A4FC700D54A3E /* Data Layer */ = {
 			isa = PBXGroup;
 			children = (
@@ -517,6 +533,7 @@
 		1D58C9F02510B8E5004F67F0 /* Games */ = {
 			isa = PBXGroup;
 			children = (
+				077043382515E6C300E038FE /* Strengths & Weaknesses */,
 				1D58C9F12510B8FB004F67F0 /* DialogueMaestro */,
 			);
 			path = Games;
@@ -525,20 +542,12 @@
 		1D58C9F12510B8FB004F67F0 /* DialogueMaestro */ = {
 			isa = PBXGroup;
 			children = (
-				1D58CA282510E148004F67F0 /* Home */,
-			);
-			path = DialogueMaestro;
-			sourceTree = "<group>";
-		};
-		1D58CA282510E148004F67F0 /* Home */ = {
-			isa = PBXGroup;
-			children = (
 				1D58CA292510E158004F67F0 /* Game */,
 				1D58CA142510CD6C004F67F0 /* DialogueMaestroViewController.swift */,
 				1D58CA152510CD6C004F67F0 /* DialogueMaestroViewController.xib */,
 				1D58CA1A2510D77F004F67F0 /* DialogueMaestroVCDataSource.swift */,
 			);
-			path = Home;
+			path = DialogueMaestro;
 			sourceTree = "<group>";
 		};
 		1D58CA292510E158004F67F0 /* Game */ = {
@@ -1049,6 +1058,7 @@
 			files = (
 				1DF5B5CE250A0354006D3064 /* CheckInboxViewController.xib in Resources */,
 				1D623ACB2507AE8100E6187E /* Ubuntu-Italic.ttf in Resources */,
+				0770433C2515E71300E038FE /* StrengthsAndWeaknessesHomeViewController.xib in Resources */,
 				1D90C5CA2507C456004817ED /* IntroCollectionViewCell.xib in Resources */,
 				1D58CA362510ED67004F67F0 /* DialogueMaestroSuccessViewController.xib in Resources */,
 				1D623AA72507A7A900E6187E /* LaunchScreen.storyboard in Resources */,
@@ -1175,6 +1185,7 @@
 				1D4C6952250F588C001669DD /* MyProgressUseCase.swift in Sources */,
 				1D0AE0F5250A55D400D54A3E /* LoginUseCase.swift in Sources */,
 				1D58CA252510D904004F67F0 /* DialogueMasterProtocolProvider.swift in Sources */,
+				0770433E2515E98D00E038FE /* StrengthsAndWeaknessesHomeVCDataSource.swift in Sources */,
 				1D4B1C4D2512639600EFB4BE /* TestResultsProtocolProvider.swift in Sources */,
 				1D4B1BF8251246B800EFB4BE /* QuizzProvider.swift in Sources */,
 				1D0AE0FE250A570700D54A3E /* AppDependenciesContainer.swift in Sources */,
@@ -1203,6 +1214,7 @@
 				1DF5B5872508FCAA006D3064 /* GamesViewController.swift in Sources */,
 				1D881FCC250B96330073485B /* VerificationInteractor.swift in Sources */,
 				1D58CA5325120D76004F67F0 /* DialogueMasterResultInrteractor.swift in Sources */,
+				0770433B2515E71300E038FE /* StrengthsAndWeaknessesHomeViewController.swift in Sources */,
 				1D58CA232510D8F5004F67F0 /* DialogueMasterInteractor.swift in Sources */,
 				1D623AD32507B5FC00E6187E /* LoginVCDataSource.swift in Sources */,
 				1D58CA162510CD6C004F67F0 /* DialogueMaestroViewController.swift in Sources */,

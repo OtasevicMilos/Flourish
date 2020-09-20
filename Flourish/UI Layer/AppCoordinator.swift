@@ -130,10 +130,10 @@ extension AppCoordinator: PresenterViewControllerDelegare{
     }
     
     func showGamesVC() {
-        if gamesVC == nil{
+//        if gamesVC == nil{
             self.gamesVC = GamesViewController(dataSource: GamesVCDataSource())
             self.gamesVC?.feedback = self.presenterVC
-        }
+//        }
         self.presenterVC?.present(gamesVC)
     }
     
@@ -162,6 +162,12 @@ extension AppCoordinator: DialogueMaestroViewControllerDelegate{
 
 //MARK: MyProgressViewControllerDelegate
 extension AppCoordinator: MyProgressViewControllerDelegate{
+    func startStrngthsAndWeaknesses() {
+        let StrengthsAndWeaknessesHomeVC = StrengthsAndWeaknessesHomeViewController(dataSource: StrengthsAndWeaknessesHomeVCDataSource())
+        window.rootViewController = StrengthsAndWeaknessesHomeVC
+        window.makeKeyAndVisible()
+    }
+    
     
     func startDialogueMaestro() {
         let dialogueMaestroVC = DialogueMaestroViewController(dataSource: DialogueMaestroVCDataSource(dependencies: self.dependencies))

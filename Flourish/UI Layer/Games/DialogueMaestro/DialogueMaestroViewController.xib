@@ -94,10 +94,10 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="L5e-7q-hwI">
-                                            <rect key="frame" x="51.5" y="310" width="311.5" height="40"/>
+                                            <rect key="frame" x="43" y="310" width="328.5" height="40"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Y7-7A-UMW">
-                                                    <rect key="frame" x="0.0" y="0.0" width="125" height="40"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="142" height="40"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="question-mark-circle" translatesAutoresizingMaskIntoConstraints="NO" id="KGT-Dd-dKR">
                                                             <rect key="frame" x="10" y="10" width="20" height="20"/>
@@ -106,8 +106,8 @@
                                                                 <constraint firstAttribute="width" constant="20" id="OGi-xb-uVS"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cx2-rT-inT">
-                                                            <rect key="frame" x="35" y="11" width="80" height="18"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18 questions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cx2-rT-inT">
+                                                            <rect key="frame" x="35" y="11" width="97" height="18"/>
                                                             <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="16"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -124,7 +124,7 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FNU-Nm-ssg">
-                                                    <rect key="frame" x="132" y="0.0" width="79" height="40"/>
+                                                    <rect key="frame" x="149" y="0.0" width="79" height="40"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ttimer" translatesAutoresizingMaskIntoConstraints="NO" id="QAd-3A-QMx">
                                                             <rect key="frame" x="10" y="10" width="20" height="20"/>
@@ -151,7 +151,7 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kVI-9y-lGk">
-                                                    <rect key="frame" x="218" y="0.0" width="93.5" height="40"/>
+                                                    <rect key="frame" x="235" y="0.0" width="93.5" height="40"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lives" translatesAutoresizingMaskIntoConstraints="NO" id="0aC-dY-eST">
                                                             <rect key="frame" x="5" y="10" width="20" height="20"/>
